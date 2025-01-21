@@ -32,7 +32,7 @@ app.use("/api/v1/user", userRoutes);
 app.get("*", (req, res, next) => {
   if (req.path.startsWith("/eshopper")) {
     res.sendFile(
-      path.resolve(__dirname, "..", "public/frontend", "index.html")
+      path.resolve(__dirname, "..", "public/eshopper/frontend", "index.html")
     );
   } else {
     next();

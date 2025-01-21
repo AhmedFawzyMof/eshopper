@@ -273,7 +273,7 @@ export default defineComponent({
         hideOffer.value = true;
       }
 
-      if (currentRoute === "/eshopper") {
+      if (currentRoute === "/eshopper/" || currentRoute === "/eshopper") {
         hideOffer.value = false;
         showHeader.value = false;
         showCategories.value = true;
